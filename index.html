@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" >
+<title>Header</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.4.1.js">
+</script>
+
+  <script type="text/javascript">
+  	$(window).on('scroll',function(){
+  		if($(window).scrollTop()){
+  			$('nav').addClass('black');
+  		}
+  		else
+  		{
+  			$('nav').removeClass('black'); 			
+  		}
+
+  		} )
+    
+  	$(document).ready(function(){
+  		$(".menu h4").click(function(){
+  			$("nav ul").toggleClass("active")
+  		})	})
+  </script>
+</head>
+<body>
+	<div class="responsive-bar">
+	<div class="logo">
+	<img src="is.png">
+	</div>
+	<div class="menu">
+		<h4>Menu</h4>
+	</div>
+	</div>
+<nav>	
+	<div class="logo">
+	<img src="is.png">
+	</div>
+	<ul>
+		<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">About</a></li>
+		<li><a href="#">Events</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Team</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	</nav>
+		
+	<div class="qwe">
+      <div class="slide current">
+        <div class="content">
+          <h1 >ISTE
+          <br>
+        </h1>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>About US</h1>
+          <p>
+</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1 >Events</h1>
+          <p>
+          </p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Gallery</h1>
+          <p></p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Team</h1>
+          <p></p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content">
+          <h1>Contact US</h1>
+          <p>
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="prev"><i class="fas fa-arrow-left">←</i></button>
+      <button id="next"><i class="fas fa-arrow-right"></i>→</button>
+    </div>
+    <script src="st.js"></script>
+  
+</body>
+</html>
